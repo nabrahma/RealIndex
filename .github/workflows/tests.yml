@@ -1,0 +1,67 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+env:
+  BLENDER_VERSION: "5.2.1"
+  BLENDER_SERIES: "5.2"
+
+jobs:
+  test:
+    runs-on: windows-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install pytest
+        run: python -m pip install --disable-pip-version-check pytest hypothesis
+
+      - name: Cache Blender
+        id: blender-cache
+        uses: actions/cache@v4
+        with:
+          path: blender
+          key: blender-${{ env.BLENDER_VERSION }}-windows-x64
+
+      - name: Download Blender
+        if: steps.blender-cache.outputs.cache-hit != 'true'
+        shell: bash
+        run: |
+          curl -sSfL -o blender.zip "https://download.blender.org/release/Blender${BLENDER_SERIES}/blender-${BLENDER_VERSION}-windows-x64.zip"
+          7z x -y -oblender blender.zip > /dev/null
+          rm blender.zip
+
+      - name: Locate Blender
+        shell: bash
+        run: |
+          bin=$(ls -d "$PWD"/blender/*/blender.exe | head -1)
+          echo "BLENDER_BIN=$bin" >> "$GITHUB_ENV"
+          "$bin" --version | head -1
+
+      - name: Pure suite
+        run: python -m pytest tests/pure -q -p no:cacheprovider
+
+      - name: Blender suite
+        shell: bash
+        run: |
+          "$BLENDER_BIN" --background --factory-startup --python scripts/setup_test_env.py
+          "$BLENDER_BIN" --background --factory-startup --python tests/run_tests.py
+
+      - name: Validate and build the extension
+        shell: bash
+        run: |
+          "$BLENDER_BIN" --factory-startup --command extension validate realindex
+          python scripts/package.py
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: realindex-extension
+          path: dist/*.zip

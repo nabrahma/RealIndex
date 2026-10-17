@@ -1,0 +1,21 @@
+name: Feature request
+description: A vendor, file format or workflow RealIndex should handle
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What you want to do
+      description: The situation and what gets in the way today.
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Example download
+      description: For a new vendor or format, a link to a free sample and its file list help most.
+  - type: textarea
+    id: idea
+    attributes:
+      label: How it could work
+      description: Optional. Keep in mind RealIndex's output is always native Blender assets.

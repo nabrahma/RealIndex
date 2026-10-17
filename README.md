@@ -1,5 +1,10 @@
 # RealIndex
 
+[![Tests](https://github.com/nabrahma/RealIndex/actions/workflows/tests.yml/badge.svg)](https://github.com/nabrahma/RealIndex/actions/workflows/tests.yml)
+[![Release](https://img.shields.io/github/v/release/nabrahma/RealIndex)](https://github.com/nabrahma/RealIndex/releases/latest)
+[![Blender 5.2 LTS](https://img.shields.io/badge/Blender-5.2%20LTS-orange?logo=blender&logoColor=white)](https://www.blender.org/download/lts/)
+[![License: GPL-3.0-or-later](https://img.shields.io/badge/license-GPL--3.0--or--later-blue)](LICENSE)
+
 **Drop it in the folder. It shows up in Blender.**
 
 RealIndex is a Blender 5.2 LTS extension that turns one folder on disk into a living asset library.
@@ -10,7 +15,8 @@ Your downloaded files are never modified.
 
 ## Five-minute walk-through
 
-1. **Install** `realindex-1.0.0.zip` (Edit > Preferences > Get Extensions > Install from Disk) and enable it.
+1. **Install** `realindex-1.0.0.zip` from the [latest release](https://github.com/nabrahma/RealIndex/releases/latest)
+   (Edit > Preferences > Get Extensions > Install from Disk) and enable it.
 2. **Set up** in the 3D Viewport sidebar (N) > RealIndex > *Set Up RealIndex*. It creates
    `Documents/RealIndex` with `Models`, `Materials`, `HDRIs` and `Inbox`, and registers two asset libraries:
    **RealIndex** (your converted downloads) and **RealIndex Files** (the folder itself, for .blend files whose
@@ -102,6 +108,9 @@ and review the diff.
 Layout: `realindex/core` is pure Python (detection, index, sync engine, worker pool), `realindex/worker` runs
 inside background Blender processes (importing, building materials and worlds, previews), the rest is the
 add-on UI.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for setup, the rules the code keeps and how detection changes are tested.
+Changes are listed in [CHANGELOG.md](CHANGELOG.md).
 
 ## Licence
 

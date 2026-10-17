@@ -1,0 +1,53 @@
+name: Bug report
+description: Something did not convert, showed up wrong, or Blender misbehaved
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. The more of the fields below you fill in, the quicker it can be fixed.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what you got instead.
+    validations:
+      required: true
+  - type: textarea
+    id: download
+    attributes:
+      label: The download
+      description: |
+        Where it came from (ambientCG, Poly Haven, Sketchfab, a marketplace pack, ...), the file or folder name,
+        and its file list if you can share it. A link to the download page is ideal.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problems panel / log
+      description: |
+        The reason shown under Problems in the RealIndex panel, and the latest worker log from the library folder
+        (`logs/` inside it, *Show Library Folder* in the panel).
+      render: text
+  - type: input
+    id: blender
+    attributes:
+      label: Blender version
+      placeholder: "5.2.1"
+    validations:
+      required: true
+  - type: input
+    id: realindex
+    attributes:
+      label: RealIndex version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options: [Windows, macOS, Linux]
+    validations:
+      required: true

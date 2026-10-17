@@ -1,0 +1,56 @@
+[
+ {
+  "catalog": "Materials/ambientCG",
+  "files": [
+   "Inbox/Bricks076C_2K-JPG.zip/Bricks076C.png",
+   "Inbox/Bricks076C_2K-JPG.zip/Bricks076C_2K-JPG_AmbientOcclusion.jpg",
+   "Inbox/Bricks076C_2K-JPG.zip/Bricks076C_2K-JPG_Color.jpg",
+   "Inbox/Bricks076C_2K-JPG.zip/Bricks076C_2K-JPG_Displacement.jpg",
+   "Inbox/Bricks076C_2K-JPG.zip/Bricks076C_2K-JPG_NormalDX.jpg",
+   "Inbox/Bricks076C_2K-JPG.zip/Bricks076C_2K-JPG_NormalGL.jpg",
+   "Inbox/Bricks076C_2K-JPG.zip/Bricks076C_2K-JPG_Roughness.jpg"
+  ],
+  "key": "Inbox/Bricks076C_2K-JPG.zip/Bricks076C_2K-JPG_Color.jpg",
+  "kind": "material",
+  "lods": [],
+  "maps": {
+   "ao": {
+    "dx": false,
+    "path": "Inbox/Bricks076C_2K-JPG.zip/Bricks076C_2K-JPG_AmbientOcclusion.jpg"
+   },
+   "color": {
+    "dx": false,
+    "path": "Inbox/Bricks076C_2K-JPG.zip/Bricks076C_2K-JPG_Color.jpg"
+   },
+   "height": {
+    "dx": false,
+    "path": "Inbox/Bricks076C_2K-JPG.zip/Bricks076C_2K-JPG_Displacement.jpg"
+   },
+   "normal": {
+    "dx": false,
+    "path": "Inbox/Bricks076C_2K-JPG.zip/Bricks076C_2K-JPG_NormalGL.jpg"
+   },
+   "rough": {
+    "dx": false,
+    "path": "Inbox/Bricks076C_2K-JPG.zip/Bricks076C_2K-JPG_Roughness.jpg"
+   }
+  },
+  "meta": {
+   "author": "ambientCG",
+   "license": "CC0",
+   "maps": [
+    "ao",
+    "color",
+    "height",
+    "normal",
+    "rough"
+   ],
+   "preview": "Inbox/Bricks076C_2K-JPG.zip/Bricks076C.png",
+   "res": "2K",
+   "source": "Inbox/Bricks076C_2K-JPG.zip"
+  },
+  "name": "Bricks076C",
+  "uses": [],
+  "vendor": "ambientCG"
+ }
+]

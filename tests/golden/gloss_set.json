@@ -1,0 +1,44 @@
+[
+ {
+  "catalog": "Materials",
+  "files": [
+   "Materials/OldMetal/OldMetal_Diffuse.png",
+   "Materials/OldMetal/OldMetal_Glossiness.png",
+   "Materials/OldMetal/OldMetal_Metallic.png",
+   "Materials/OldMetal/OldMetal_Normal.png"
+  ],
+  "key": "Materials/OldMetal/OldMetal_Diffuse.png",
+  "kind": "material",
+  "lods": [],
+  "maps": {
+   "color": {
+    "dx": false,
+    "path": "Materials/OldMetal/OldMetal_Diffuse.png"
+   },
+   "gloss": {
+    "dx": false,
+    "path": "Materials/OldMetal/OldMetal_Glossiness.png"
+   },
+   "metal": {
+    "dx": false,
+    "path": "Materials/OldMetal/OldMetal_Metallic.png"
+   },
+   "normal": {
+    "dx": false,
+    "path": "Materials/OldMetal/OldMetal_Normal.png"
+   }
+  },
+  "meta": {
+   "maps": [
+    "color",
+    "gloss",
+    "metal",
+    "normal"
+   ],
+   "source": "Materials/OldMetal/OldMetal_Diffuse.png"
+  },
+  "name": "OldMetal",
+  "uses": [],
+  "vendor": null
+ }
+]

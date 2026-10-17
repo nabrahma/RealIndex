@@ -1,0 +1,22 @@
+[
+ {
+  "catalog": "Models/Props",
+  "files": [
+   "Models/Props/Vase.glb"
+  ],
+  "key": "Models/Props/Vase.glb",
+  "kind": "model",
+  "lods": [],
+  "maps": {},
+  "meta": {
+   "format": "glb",
+   "materials": [
+    "Glaze"
+   ],
+   "source": "Models/Props/Vase.glb"
+  },
+  "name": "Vase",
+  "uses": [],
+  "vendor": null
+ }
+]

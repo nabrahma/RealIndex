@@ -1,0 +1,25 @@
+[
+ {
+  "catalog": "HDRIs",
+  "files": [
+   "HDRIs/meadow_2k.exr"
+  ],
+  "key": "HDRIs/meadow_2k.exr",
+  "kind": "hdri",
+  "lods": [],
+  "maps": {},
+  "meta": {
+   "author": "Poly Haven",
+   "license": "CC0",
+   "res": "2K",
+   "size": [
+    512,
+    256
+   ],
+   "source": "HDRIs/meadow_2k.exr"
+  },
+  "name": "meadow",
+  "uses": [],
+  "vendor": "Poly Haven"
+ }
+]

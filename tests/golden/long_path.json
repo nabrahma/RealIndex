@@ -1,0 +1,32 @@
+[
+ {
+  "catalog": "Materials/Long/very_long_folder_name_00_for_windows_path_limits/very_long_folder_name_01_for_windows_path_limits/very_long_folder_name_02_for_windows_path_limits/very_long_folder_name_03_for_windows_path_limits",
+  "files": [
+   "Materials/Long/very_long_folder_name_00_for_windows_path_limits/very_long_folder_name_01_for_windows_path_limits/very_long_folder_name_02_for_windows_path_limits/very_long_folder_name_03_for_windows_path_limits/very_long_folder_name_04_for_windows_path_limits/Concrete_Long_Path_Material_Color.png",
+   "Materials/Long/very_long_folder_name_00_for_windows_path_limits/very_long_folder_name_01_for_windows_path_limits/very_long_folder_name_02_for_windows_path_limits/very_long_folder_name_03_for_windows_path_limits/very_long_folder_name_04_for_windows_path_limits/Concrete_Long_Path_Material_Roughness.png"
+  ],
+  "key": "Materials/Long/very_long_folder_name_00_for_windows_path_limits/very_long_folder_name_01_for_windows_path_limits/very_long_folder_name_02_for_windows_path_limits/very_long_folder_name_03_for_windows_path_limits/very_long_folder_name_04_for_windows_path_limits/Concrete_Long_Path_Material_Color.png",
+  "kind": "material",
+  "lods": [],
+  "maps": {
+   "color": {
+    "dx": false,
+    "path": "Materials/Long/very_long_folder_name_00_for_windows_path_limits/very_long_folder_name_01_for_windows_path_limits/very_long_folder_name_02_for_windows_path_limits/very_long_folder_name_03_for_windows_path_limits/very_long_folder_name_04_for_windows_path_limits/Concrete_Long_Path_Material_Color.png"
+   },
+   "rough": {
+    "dx": false,
+    "path": "Materials/Long/very_long_folder_name_00_for_windows_path_limits/very_long_folder_name_01_for_windows_path_limits/very_long_folder_name_02_for_windows_path_limits/very_long_folder_name_03_for_windows_path_limits/very_long_folder_name_04_for_windows_path_limits/Concrete_Long_Path_Material_Roughness.png"
+   }
+  },
+  "meta": {
+   "maps": [
+    "color",
+    "rough"
+   ],
+   "source": "Materials/Long/very_long_folder_name_00_for_windows_path_limits/very_long_folder_name_01_for_windows_path_limits/very_long_folder_name_02_for_windows_path_limits/very_long_folder_name_03_for_windows_path_limits/very_long_folder_name_04_for_windows_path_limits/Concrete_Long_Path_Material_Color.png"
+  },
+  "name": "Concrete_Long_Path_Material",
+  "uses": [],
+  "vendor": null
+ }
+]

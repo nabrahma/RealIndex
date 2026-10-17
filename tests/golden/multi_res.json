@@ -1,0 +1,80 @@
+[
+ {
+  "catalog": "Materials/Planks",
+  "files": [
+   "Materials/Planks/planks_diff_1k.jpg",
+   "Materials/Planks/planks_nor_gl_1k.png",
+   "Materials/Planks/planks_rough_1k.jpg"
+  ],
+  "key": "Materials/Planks/planks_diff_1k.jpg",
+  "kind": "material",
+  "lods": [],
+  "maps": {
+   "color": {
+    "dx": false,
+    "path": "Materials/Planks/planks_diff_1k.jpg"
+   },
+   "normal": {
+    "dx": false,
+    "path": "Materials/Planks/planks_nor_gl_1k.png"
+   },
+   "rough": {
+    "dx": false,
+    "path": "Materials/Planks/planks_rough_1k.jpg"
+   }
+  },
+  "meta": {
+   "author": "Poly Haven",
+   "license": "CC0",
+   "maps": [
+    "color",
+    "normal",
+    "rough"
+   ],
+   "res": "1K",
+   "source": "Materials/Planks/planks_diff_1k.jpg"
+  },
+  "name": "planks 1K",
+  "uses": [],
+  "vendor": "Poly Haven"
+ },
+ {
+  "catalog": "Materials/Planks",
+  "files": [
+   "Materials/Planks/planks_diff_2k.jpg",
+   "Materials/Planks/planks_nor_gl_2k.png",
+   "Materials/Planks/planks_rough_2k.jpg"
+  ],
+  "key": "Materials/Planks/planks_diff_2k.jpg",
+  "kind": "material",
+  "lods": [],
+  "maps": {
+   "color": {
+    "dx": false,
+    "path": "Materials/Planks/planks_diff_2k.jpg"
+   },
+   "normal": {
+    "dx": false,
+    "path": "Materials/Planks/planks_nor_gl_2k.png"
+   },
+   "rough": {
+    "dx": false,
+    "path": "Materials/Planks/planks_rough_2k.jpg"
+   }
+  },
+  "meta": {
+   "author": "Poly Haven",
+   "license": "CC0",
+   "maps": [
+    "color",
+    "normal",
+    "rough"
+   ],
+   "res": "2K",
+   "source": "Materials/Planks/planks_diff_2k.jpg"
+  },
+  "name": "planks 2K",
+  "uses": [],
+  "vendor": "Poly Haven"
+ }
+]

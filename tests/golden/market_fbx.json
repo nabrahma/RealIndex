@@ -1,0 +1,49 @@
+[
+ {
+  "catalog": "Models/MedievalPack",
+  "files": [
+   "Models/MedievalPack/FBX/SM_Barrel_LOD0.fbx",
+   "Models/MedievalPack/FBX/SM_Barrel_LOD1.fbx",
+   "Models/MedievalPack/Textures/T_BarrelWood_D.png",
+   "Models/MedievalPack/Textures/T_BarrelWood_N.png",
+   "Models/MedievalPack/Textures/T_BarrelWood_R.png"
+  ],
+  "key": "Models/MedievalPack/FBX/SM_Barrel_LOD0.fbx",
+  "kind": "model",
+  "lods": [
+   "Models/MedievalPack/FBX/SM_Barrel_LOD1.fbx"
+  ],
+  "maps": {},
+  "meta": {
+   "format": "fbx",
+   "materials": [],
+   "source": "Models/MedievalPack/FBX/SM_Barrel_LOD0.fbx"
+  },
+  "name": "SM_Barrel",
+  "uses": [],
+  "vendor": null
+ },
+ {
+  "catalog": "Models/MedievalPack",
+  "files": [
+   "Models/MedievalPack/FBX/SM_Crate_LOD0.fbx",
+   "Models/MedievalPack/FBX/SM_Crate_LOD1.fbx",
+   "Models/MedievalPack/Textures/T_CrateOak_BaseColor.png",
+   "Models/MedievalPack/Textures/T_CrateOak_Normal.png"
+  ],
+  "key": "Models/MedievalPack/FBX/SM_Crate_LOD0.fbx",
+  "kind": "model",
+  "lods": [
+   "Models/MedievalPack/FBX/SM_Crate_LOD1.fbx"
+  ],
+  "maps": {},
+  "meta": {
+   "format": "fbx",
+   "materials": [],
+   "source": "Models/MedievalPack/FBX/SM_Crate_LOD0.fbx"
+  },
+  "name": "SM_Crate",
+  "uses": [],
+  "vendor": null
+ }
+]

@@ -1,0 +1,17 @@
+[
+ {
+  "catalog": "",
+  "files": [
+   "Inbox/old_lamp.max"
+  ],
+  "key": "Inbox/old_lamp.max",
+  "kind": "problem",
+  "lods": [],
+  "maps": {},
+  "meta": {},
+  "name": "old_lamp",
+  "problem": "Unsupported format .max: export to FBX or glTF first",
+  "uses": [],
+  "vendor": null
+ }
+]

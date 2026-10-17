@@ -1,0 +1,47 @@
+[
+ {
+  "catalog": "Materials/Rock",
+  "files": [
+   "Materials/Rock/rock_wall_08_2k/textures/rock_wall_08_arm_2k.jpg",
+   "Materials/Rock/rock_wall_08_2k/textures/rock_wall_08_diff_2k.jpg",
+   "Materials/Rock/rock_wall_08_2k/textures/rock_wall_08_disp_2k.png",
+   "Materials/Rock/rock_wall_08_2k/textures/rock_wall_08_nor_dx_2k.png"
+  ],
+  "key": "Materials/Rock/rock_wall_08_2k/textures/rock_wall_08_diff_2k.jpg",
+  "kind": "material",
+  "lods": [],
+  "maps": {
+   "arm": {
+    "dx": false,
+    "path": "Materials/Rock/rock_wall_08_2k/textures/rock_wall_08_arm_2k.jpg"
+   },
+   "color": {
+    "dx": false,
+    "path": "Materials/Rock/rock_wall_08_2k/textures/rock_wall_08_diff_2k.jpg"
+   },
+   "height": {
+    "dx": false,
+    "path": "Materials/Rock/rock_wall_08_2k/textures/rock_wall_08_disp_2k.png"
+   },
+   "normal": {
+    "dx": true,
+    "path": "Materials/Rock/rock_wall_08_2k/textures/rock_wall_08_nor_dx_2k.png"
+   }
+  },
+  "meta": {
+   "author": "Poly Haven",
+   "license": "CC0",
+   "maps": [
+    "arm",
+    "color",
+    "height",
+    "normal"
+   ],
+   "res": "2K",
+   "source": "Materials/Rock/rock_wall_08_2k/textures/rock_wall_08_diff_2k.jpg"
+  },
+  "name": "rock_wall_08",
+  "uses": [],
+  "vendor": "Poly Haven"
+ }
+]

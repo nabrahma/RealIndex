@@ -1,0 +1,24 @@
+[
+ {
+  "catalog": "Models/Furniture",
+  "files": [
+   "Models/Furniture/Table/table.mtl",
+   "Models/Furniture/Table/table.obj",
+   "Models/Furniture/Table/table_diffuse.png"
+  ],
+  "key": "Models/Furniture/Table/table.obj",
+  "kind": "model",
+  "lods": [],
+  "maps": {},
+  "meta": {
+   "format": "obj",
+   "materials": [
+    "TableWood"
+   ],
+   "source": "Models/Furniture/Table/table.obj"
+  },
+  "name": "table",
+  "uses": [],
+  "vendor": null
+ }
+]

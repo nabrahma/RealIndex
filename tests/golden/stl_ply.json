@@ -1,0 +1,38 @@
+[
+ {
+  "catalog": "Models/Parts",
+  "files": [
+   "Models/Parts/Bracket.stl"
+  ],
+  "key": "Models/Parts/Bracket.stl",
+  "kind": "model",
+  "lods": [],
+  "maps": {},
+  "meta": {
+   "format": "stl",
+   "materials": [],
+   "source": "Models/Parts/Bracket.stl"
+  },
+  "name": "Bracket",
+  "uses": [],
+  "vendor": null
+ },
+ {
+  "catalog": "Models/Parts",
+  "files": [
+   "Models/Parts/Gear.ply"
+  ],
+  "key": "Models/Parts/Gear.ply",
+  "kind": "model",
+  "lods": [],
+  "maps": {},
+  "meta": {
+   "format": "ply",
+   "materials": [],
+   "source": "Models/Parts/Gear.ply"
+  },
+  "name": "Gear",
+  "uses": [],
+  "vendor": null
+ }
+]

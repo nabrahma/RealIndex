@@ -1,0 +1,29 @@
+[
+ {
+  "catalog": "Models/Furniture",
+  "files": [
+   "Models/Furniture/wooden_chair.zip/scene.bin",
+   "Models/Furniture/wooden_chair.zip/scene.gltf",
+   "Models/Furniture/wooden_chair.zip/textures/Wood_baseColor.png",
+   "Models/Furniture/wooden_chair.zip/textures/Wood_normal.png"
+  ],
+  "key": "Models/Furniture/wooden_chair.zip/scene.gltf",
+  "kind": "model",
+  "lods": [],
+  "maps": {},
+  "meta": {
+   "author": "Jane Maker",
+   "format": "gltf",
+   "license": "CC-BY-4.0",
+   "license_file": "Models/Furniture/wooden_chair.zip/license.txt",
+   "materials": [
+    "Wood"
+   ],
+   "source": "Models/Furniture/wooden_chair.zip",
+   "title": "Wooden Chair"
+  },
+  "name": "Wooden Chair",
+  "uses": [],
+  "vendor": "Sketchfab"
+ }
+]

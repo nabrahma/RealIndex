@@ -1,0 +1,20 @@
+[
+ {
+  "catalog": "Models/Anim",
+  "files": [
+   "Models/Anim/Spinner.abc"
+  ],
+  "key": "Models/Anim/Spinner.abc",
+  "kind": "model",
+  "lods": [],
+  "maps": {},
+  "meta": {
+   "format": "abc",
+   "materials": [],
+   "source": "Models/Anim/Spinner.abc"
+  },
+  "name": "Spinner",
+  "uses": [],
+  "vendor": null
+ }
+]

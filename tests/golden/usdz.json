@@ -1,0 +1,20 @@
+[
+ {
+  "catalog": "Models/Lights",
+  "files": [
+   "Models/Lights/Lamp.usdz"
+  ],
+  "key": "Models/Lights/Lamp.usdz",
+  "kind": "model",
+  "lods": [],
+  "maps": {},
+  "meta": {
+   "format": "usdz",
+   "materials": [],
+   "source": "Models/Lights/Lamp.usdz"
+  },
+  "name": "Lamp",
+  "uses": [],
+  "vendor": null
+ }
+]

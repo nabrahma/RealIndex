@@ -1,0 +1,621 @@
+[
+ {
+  "catalog": "Blends",
+  "files": [
+   "Blends/AssetPack.blend"
+  ],
+  "key": "Blends/AssetPack.blend",
+  "kind": "blend",
+  "lods": [],
+  "maps": {},
+  "meta": {
+   "format": "blend",
+   "materials": [],
+   "source": "Blends/AssetPack.blend"
+  },
+  "name": "AssetPack",
+  "uses": [],
+  "vendor": null
+ },
+ {
+  "catalog": "Blends",
+  "files": [
+   "Blends/Props.blend"
+  ],
+  "key": "Blends/Props.blend",
+  "kind": "blend",
+  "lods": [],
+  "maps": {},
+  "meta": {
+   "format": "blend",
+   "materials": [],
+   "source": "Blends/Props.blend"
+  },
+  "name": "Props",
+  "uses": [],
+  "vendor": null
+ },
+ {
+  "catalog": "HDRIs",
+  "files": [
+   "HDRIs/meadow_2k.exr"
+  ],
+  "key": "HDRIs/meadow_2k.exr",
+  "kind": "hdri",
+  "lods": [],
+  "maps": {},
+  "meta": {
+   "author": "Poly Haven",
+   "license": "CC0",
+   "res": "2K",
+   "size": [
+    512,
+    256
+   ],
+   "source": "HDRIs/meadow_2k.exr"
+  },
+  "name": "meadow",
+  "uses": [],
+  "vendor": "Poly Haven"
+ },
+ {
+  "catalog": "Materials/ambientCG",
+  "files": [
+   "Inbox/Bricks076C_2K-JPG.zip/Bricks076C.png",
+   "Inbox/Bricks076C_2K-JPG.zip/Bricks076C_2K-JPG_AmbientOcclusion.jpg",
+   "Inbox/Bricks076C_2K-JPG.zip/Bricks076C_2K-JPG_Color.jpg",
+   "Inbox/Bricks076C_2K-JPG.zip/Bricks076C_2K-JPG_Displacement.jpg",
+   "Inbox/Bricks076C_2K-JPG.zip/Bricks076C_2K-JPG_NormalDX.jpg",
+   "Inbox/Bricks076C_2K-JPG.zip/Bricks076C_2K-JPG_NormalGL.jpg",
+   "Inbox/Bricks076C_2K-JPG.zip/Bricks076C_2K-JPG_Roughness.jpg"
+  ],
+  "key": "Inbox/Bricks076C_2K-JPG.zip/Bricks076C_2K-JPG_Color.jpg",
+  "kind": "material",
+  "lods": [],
+  "maps": {
+   "ao": {
+    "dx": false,
+    "path": "Inbox/Bricks076C_2K-JPG.zip/Bricks076C_2K-JPG_AmbientOcclusion.jpg"
+   },
+   "color": {
+    "dx": false,
+    "path": "Inbox/Bricks076C_2K-JPG.zip/Bricks076C_2K-JPG_Color.jpg"
+   },
+   "height": {
+    "dx": false,
+    "path": "Inbox/Bricks076C_2K-JPG.zip/Bricks076C_2K-JPG_Displacement.jpg"
+   },
+   "normal": {
+    "dx": false,
+    "path": "Inbox/Bricks076C_2K-JPG.zip/Bricks076C_2K-JPG_NormalGL.jpg"
+   },
+   "rough": {
+    "dx": false,
+    "path": "Inbox/Bricks076C_2K-JPG.zip/Bricks076C_2K-JPG_Roughness.jpg"
+   }
+  },
+  "meta": {
+   "author": "ambientCG",
+   "license": "CC0",
+   "maps": [
+    "ao",
+    "color",
+    "height",
+    "normal",
+    "rough"
+   ],
+   "preview": "Inbox/Bricks076C_2K-JPG.zip/Bricks076C.png",
+   "res": "2K",
+   "source": "Inbox/Bricks076C_2K-JPG.zip"
+  },
+  "name": "Bricks076C",
+  "uses": [],
+  "vendor": "ambientCG"
+ },
+ {
+  "catalog": "",
+  "files": [
+   "Inbox/decal_grunge.png"
+  ],
+  "key": "Inbox/decal_grunge.png",
+  "kind": "problem",
+  "lods": [],
+  "maps": {},
+  "meta": {},
+  "name": "decal_grunge",
+  "problem": "Image is not part of a texture set (no map name such as _Color or _Normal)",
+  "uses": [],
+  "vendor": null
+ },
+ {
+  "catalog": "",
+  "files": [
+   "Inbox/old_lamp.max"
+  ],
+  "key": "Inbox/old_lamp.max",
+  "kind": "problem",
+  "lods": [],
+  "maps": {},
+  "meta": {},
+  "name": "old_lamp",
+  "problem": "Unsupported format .max: export to FBX or glTF first",
+  "uses": [],
+  "vendor": null
+ },
+ {
+  "catalog": "",
+  "files": [
+   "Inbox/rocks_pack.zip"
+  ],
+  "key": "Inbox/rocks_pack.zip",
+  "kind": "problem",
+  "lods": [],
+  "maps": {},
+  "meta": {
+   "source": "Inbox/rocks_pack.zip"
+  },
+  "name": "rocks_pack",
+  "problem": "Corrupted archive (File is not a zip file)",
+  "uses": [],
+  "vendor": null
+ },
+ {
+  "catalog": "Materials/ambientCG",
+  "files": [
+   "Inbox/tiles_bundle.zip/Tiles012_1K-JPG.zip/Tiles012_1K-JPG_Color.jpg",
+   "Inbox/tiles_bundle.zip/Tiles012_1K-JPG.zip/Tiles012_1K-JPG_NormalGL.jpg",
+   "Inbox/tiles_bundle.zip/Tiles012_1K-JPG.zip/Tiles012_1K-JPG_Roughness.jpg"
+  ],
+  "key": "Inbox/tiles_bundle.zip/Tiles012_1K-JPG.zip/Tiles012_1K-JPG_Color.jpg",
+  "kind": "material",
+  "lods": [],
+  "maps": {
+   "color": {
+    "dx": false,
+    "path": "Inbox/tiles_bundle.zip/Tiles012_1K-JPG.zip/Tiles012_1K-JPG_Color.jpg"
+   },
+   "normal": {
+    "dx": false,
+    "path": "Inbox/tiles_bundle.zip/Tiles012_1K-JPG.zip/Tiles012_1K-JPG_NormalGL.jpg"
+   },
+   "rough": {
+    "dx": false,
+    "path": "Inbox/tiles_bundle.zip/Tiles012_1K-JPG.zip/Tiles012_1K-JPG_Roughness.jpg"
+   }
+  },
+  "meta": {
+   "author": "ambientCG",
+   "license": "CC0",
+   "maps": [
+    "color",
+    "normal",
+    "rough"
+   ],
+   "res": "1K",
+   "source": "Inbox/tiles_bundle.zip"
+  },
+  "name": "Tiles012",
+  "uses": [],
+  "vendor": "ambientCG"
+ },
+ {
+  "catalog": "Materials/Long/very_long_folder_name_00_for_windows_path_limits/very_long_folder_name_01_for_windows_path_limits/very_long_folder_name_02_for_windows_path_limits/very_long_folder_name_03_for_windows_path_limits",
+  "files": [
+   "Materials/Long/very_long_folder_name_00_for_windows_path_limits/very_long_folder_name_01_for_windows_path_limits/very_long_folder_name_02_for_windows_path_limits/very_long_folder_name_03_for_windows_path_limits/very_long_folder_name_04_for_windows_path_limits/Concrete_Long_Path_Material_Color.png",
+   "Materials/Long/very_long_folder_name_00_for_windows_path_limits/very_long_folder_name_01_for_windows_path_limits/very_long_folder_name_02_for_windows_path_limits/very_long_folder_name_03_for_windows_path_limits/very_long_folder_name_04_for_windows_path_limits/Concrete_Long_Path_Material_Roughness.png"
+  ],
+  "key": "Materials/Long/very_long_folder_name_00_for_windows_path_limits/very_long_folder_name_01_for_windows_path_limits/very_long_folder_name_02_for_windows_path_limits/very_long_folder_name_03_for_windows_path_limits/very_long_folder_name_04_for_windows_path_limits/Concrete_Long_Path_Material_Color.png",
+  "kind": "material",
+  "lods": [],
+  "maps": {
+   "color": {
+    "dx": false,
+    "path": "Materials/Long/very_long_folder_name_00_for_windows_path_limits/very_long_folder_name_01_for_windows_path_limits/very_long_folder_name_02_for_windows_path_limits/very_long_folder_name_03_for_windows_path_limits/very_long_folder_name_04_for_windows_path_limits/Concrete_Long_Path_Material_Color.png"
+   },
+   "rough": {
+    "dx": false,
+    "path": "Materials/Long/very_long_folder_name_00_for_windows_path_limits/very_long_folder_name_01_for_windows_path_limits/very_long_folder_name_02_for_windows_path_limits/very_long_folder_name_03_for_windows_path_limits/very_long_folder_name_04_for_windows_path_limits/Concrete_Long_Path_Material_Roughness.png"
+   }
+  },
+  "meta": {
+   "maps": [
+    "color",
+    "rough"
+   ],
+   "source": "Materials/Long/very_long_folder_name_00_for_windows_path_limits/very_long_folder_name_01_for_windows_path_limits/very_long_folder_name_02_for_windows_path_limits/very_long_folder_name_03_for_windows_path_limits/very_long_folder_name_04_for_windows_path_limits/Concrete_Long_Path_Material_Color.png"
+  },
+  "name": "Concrete_Long_Path_Material",
+  "uses": [],
+  "vendor": null
+ },
+ {
+  "catalog": "Materials",
+  "files": [
+   "Materials/OldMetal/OldMetal_Diffuse.png",
+   "Materials/OldMetal/OldMetal_Glossiness.png",
+   "Materials/OldMetal/OldMetal_Metallic.png",
+   "Materials/OldMetal/OldMetal_Normal.png"
+  ],
+  "key": "Materials/OldMetal/OldMetal_Diffuse.png",
+  "kind": "material",
+  "lods": [],
+  "maps": {
+   "color": {
+    "dx": false,
+    "path": "Materials/OldMetal/OldMetal_Diffuse.png"
+   },
+   "gloss": {
+    "dx": false,
+    "path": "Materials/OldMetal/OldMetal_Glossiness.png"
+   },
+   "metal": {
+    "dx": false,
+    "path": "Materials/OldMetal/OldMetal_Metallic.png"
+   },
+   "normal": {
+    "dx": false,
+    "path": "Materials/OldMetal/OldMetal_Normal.png"
+   }
+  },
+  "meta": {
+   "maps": [
+    "color",
+    "gloss",
+    "metal",
+    "normal"
+   ],
+   "source": "Materials/OldMetal/OldMetal_Diffuse.png"
+  },
+  "name": "OldMetal",
+  "uses": [],
+  "vendor": null
+ },
+ {
+  "catalog": "Materials/Planks",
+  "files": [
+   "Materials/Planks/planks_diff_1k.jpg",
+   "Materials/Planks/planks_nor_gl_1k.png",
+   "Materials/Planks/planks_rough_1k.jpg"
+  ],
+  "key": "Materials/Planks/planks_diff_1k.jpg",
+  "kind": "material",
+  "lods": [],
+  "maps": {
+   "color": {
+    "dx": false,
+    "path": "Materials/Planks/planks_diff_1k.jpg"
+   },
+   "normal": {
+    "dx": false,
+    "path": "Materials/Planks/planks_nor_gl_1k.png"
+   },
+   "rough": {
+    "dx": false,
+    "path": "Materials/Planks/planks_rough_1k.jpg"
+   }
+  },
+  "meta": {
+   "author": "Poly Haven",
+   "license": "CC0",
+   "maps": [
+    "color",
+    "normal",
+    "rough"
+   ],
+   "res": "1K",
+   "source": "Materials/Planks/planks_diff_1k.jpg"
+  },
+  "name": "planks 1K",
+  "uses": [],
+  "vendor": "Poly Haven"
+ },
+ {
+  "catalog": "Materials/Planks",
+  "files": [
+   "Materials/Planks/planks_diff_2k.jpg",
+   "Materials/Planks/planks_nor_gl_2k.png",
+   "Materials/Planks/planks_rough_2k.jpg"
+  ],
+  "key": "Materials/Planks/planks_diff_2k.jpg",
+  "kind": "material",
+  "lods": [],
+  "maps": {
+   "color": {
+    "dx": false,
+    "path": "Materials/Planks/planks_diff_2k.jpg"
+   },
+   "normal": {
+    "dx": false,
+    "path": "Materials/Planks/planks_nor_gl_2k.png"
+   },
+   "rough": {
+    "dx": false,
+    "path": "Materials/Planks/planks_rough_2k.jpg"
+   }
+  },
+  "meta": {
+   "author": "Poly Haven",
+   "license": "CC0",
+   "maps": [
+    "color",
+    "normal",
+    "rough"
+   ],
+   "res": "2K",
+   "source": "Materials/Planks/planks_diff_2k.jpg"
+  },
+  "name": "planks 2K",
+  "uses": [],
+  "vendor": "Poly Haven"
+ },
+ {
+  "catalog": "Materials/Rock",
+  "files": [
+   "Materials/Rock/rock_wall_08_2k/textures/rock_wall_08_arm_2k.jpg",
+   "Materials/Rock/rock_wall_08_2k/textures/rock_wall_08_diff_2k.jpg",
+   "Materials/Rock/rock_wall_08_2k/textures/rock_wall_08_disp_2k.png",
+   "Materials/Rock/rock_wall_08_2k/textures/rock_wall_08_nor_dx_2k.png"
+  ],
+  "key": "Materials/Rock/rock_wall_08_2k/textures/rock_wall_08_diff_2k.jpg",
+  "kind": "material",
+  "lods": [],
+  "maps": {
+   "arm": {
+    "dx": false,
+    "path": "Materials/Rock/rock_wall_08_2k/textures/rock_wall_08_arm_2k.jpg"
+   },
+   "color": {
+    "dx": false,
+    "path": "Materials/Rock/rock_wall_08_2k/textures/rock_wall_08_diff_2k.jpg"
+   },
+   "height": {
+    "dx": false,
+    "path": "Materials/Rock/rock_wall_08_2k/textures/rock_wall_08_disp_2k.png"
+   },
+   "normal": {
+    "dx": true,
+    "path": "Materials/Rock/rock_wall_08_2k/textures/rock_wall_08_nor_dx_2k.png"
+   }
+  },
+  "meta": {
+   "author": "Poly Haven",
+   "license": "CC0",
+   "maps": [
+    "arm",
+    "color",
+    "height",
+    "normal"
+   ],
+   "res": "2K",
+   "source": "Materials/Rock/rock_wall_08_2k/textures/rock_wall_08_diff_2k.jpg"
+  },
+  "name": "rock_wall_08",
+  "uses": [],
+  "vendor": "Poly Haven"
+ },
+ {
+  "catalog": "Materials/Ünïcode Földer",
+  "files": [
+   "Materials/Ünïcode Földer/Grès Tiles 2m/grès_tiles_Color.png",
+   "Materials/Ünïcode Földer/Grès Tiles 2m/grès_tiles_Normal.png",
+   "Materials/Ünïcode Földer/Grès Tiles 2m/grès_tiles_Roughness.png"
+  ],
+  "key": "Materials/Ünïcode Földer/Grès Tiles 2m/grès_tiles_Color.png",
+  "kind": "material",
+  "lods": [],
+  "maps": {
+   "color": {
+    "dx": false,
+    "path": "Materials/Ünïcode Földer/Grès Tiles 2m/grès_tiles_Color.png"
+   },
+   "normal": {
+    "dx": false,
+    "path": "Materials/Ünïcode Földer/Grès Tiles 2m/grès_tiles_Normal.png"
+   },
+   "rough": {
+    "dx": false,
+    "path": "Materials/Ünïcode Földer/Grès Tiles 2m/grès_tiles_Roughness.png"
+   }
+  },
+  "meta": {
+   "maps": [
+    "color",
+    "normal",
+    "rough"
+   ],
+   "size_m": 2.0,
+   "source": "Materials/Ünïcode Földer/Grès Tiles 2m/grès_tiles_Color.png"
+  },
+  "name": "grès_tiles",
+  "uses": [],
+  "vendor": null
+ },
+ {
+  "catalog": "Models/Anim",
+  "files": [
+   "Models/Anim/Spinner.abc"
+  ],
+  "key": "Models/Anim/Spinner.abc",
+  "kind": "model",
+  "lods": [],
+  "maps": {},
+  "meta": {
+   "format": "abc",
+   "materials": [],
+   "source": "Models/Anim/Spinner.abc"
+  },
+  "name": "Spinner",
+  "uses": [],
+  "vendor": null
+ },
+ {
+  "catalog": "Models/Furniture",
+  "files": [
+   "Models/Furniture/Table/table.mtl",
+   "Models/Furniture/Table/table.obj",
+   "Models/Furniture/Table/table_diffuse.png"
+  ],
+  "key": "Models/Furniture/Table/table.obj",
+  "kind": "model",
+  "lods": [],
+  "maps": {},
+  "meta": {
+   "format": "obj",
+   "materials": [
+    "TableWood"
+   ],
+   "source": "Models/Furniture/Table/table.obj"
+  },
+  "name": "table",
+  "uses": [],
+  "vendor": null
+ },
+ {
+  "catalog": "Models/Furniture",
+  "files": [
+   "Models/Furniture/wooden_chair.zip/scene.bin",
+   "Models/Furniture/wooden_chair.zip/scene.gltf",
+   "Models/Furniture/wooden_chair.zip/textures/Wood_baseColor.png",
+   "Models/Furniture/wooden_chair.zip/textures/Wood_normal.png"
+  ],
+  "key": "Models/Furniture/wooden_chair.zip/scene.gltf",
+  "kind": "model",
+  "lods": [],
+  "maps": {},
+  "meta": {
+   "author": "Jane Maker",
+   "format": "gltf",
+   "license": "CC-BY-4.0",
+   "license_file": "Models/Furniture/wooden_chair.zip/license.txt",
+   "materials": [
+    "Wood"
+   ],
+   "source": "Models/Furniture/wooden_chair.zip",
+   "title": "Wooden Chair"
+  },
+  "name": "Wooden Chair",
+  "uses": [],
+  "vendor": "Sketchfab"
+ },
+ {
+  "catalog": "Models/Lights",
+  "files": [
+   "Models/Lights/Lamp.usdz"
+  ],
+  "key": "Models/Lights/Lamp.usdz",
+  "kind": "model",
+  "lods": [],
+  "maps": {},
+  "meta": {
+   "format": "usdz",
+   "materials": [],
+   "source": "Models/Lights/Lamp.usdz"
+  },
+  "name": "Lamp",
+  "uses": [],
+  "vendor": null
+ },
+ {
+  "catalog": "Models/MedievalPack",
+  "files": [
+   "Models/MedievalPack/FBX/SM_Barrel_LOD0.fbx",
+   "Models/MedievalPack/FBX/SM_Barrel_LOD1.fbx",
+   "Models/MedievalPack/Textures/T_BarrelWood_D.png",
+   "Models/MedievalPack/Textures/T_BarrelWood_N.png",
+   "Models/MedievalPack/Textures/T_BarrelWood_R.png"
+  ],
+  "key": "Models/MedievalPack/FBX/SM_Barrel_LOD0.fbx",
+  "kind": "model",
+  "lods": [
+   "Models/MedievalPack/FBX/SM_Barrel_LOD1.fbx"
+  ],
+  "maps": {},
+  "meta": {
+   "format": "fbx",
+   "materials": [],
+   "source": "Models/MedievalPack/FBX/SM_Barrel_LOD0.fbx"
+  },
+  "name": "SM_Barrel",
+  "uses": [],
+  "vendor": null
+ },
+ {
+  "catalog": "Models/MedievalPack",
+  "files": [
+   "Models/MedievalPack/FBX/SM_Crate_LOD0.fbx",
+   "Models/MedievalPack/FBX/SM_Crate_LOD1.fbx",
+   "Models/MedievalPack/Textures/T_CrateOak_BaseColor.png",
+   "Models/MedievalPack/Textures/T_CrateOak_Normal.png"
+  ],
+  "key": "Models/MedievalPack/FBX/SM_Crate_LOD0.fbx",
+  "kind": "model",
+  "lods": [
+   "Models/MedievalPack/FBX/SM_Crate_LOD1.fbx"
+  ],
+  "maps": {},
+  "meta": {
+   "format": "fbx",
+   "materials": [],
+   "source": "Models/MedievalPack/FBX/SM_Crate_LOD0.fbx"
+  },
+  "name": "SM_Crate",
+  "uses": [],
+  "vendor": null
+ },
+ {
+  "catalog": "Models/Parts",
+  "files": [
+   "Models/Parts/Bracket.stl"
+  ],
+  "key": "Models/Parts/Bracket.stl",
+  "kind": "model",
+  "lods": [],
+  "maps": {},
+  "meta": {
+   "format": "stl",
+   "materials": [],
+   "source": "Models/Parts/Bracket.stl"
+  },
+  "name": "Bracket",
+  "uses": [],
+  "vendor": null
+ },
+ {
+  "catalog": "Models/Parts",
+  "files": [
+   "Models/Parts/Gear.ply"
+  ],
+  "key": "Models/Parts/Gear.ply",
+  "kind": "model",
+  "lods": [],
+  "maps": {},
+  "meta": {
+   "format": "ply",
+   "materials": [],
+   "source": "Models/Parts/Gear.ply"
+  },
+  "name": "Gear",
+  "uses": [],
+  "vendor": null
+ },
+ {
+  "catalog": "Models/Props",
+  "files": [
+   "Models/Props/Vase.glb"
+  ],
+  "key": "Models/Props/Vase.glb",
+  "kind": "model",
+  "lods": [],
+  "maps": {},
+  "meta": {
+   "format": "glb",
+   "materials": [
+    "Glaze"
+   ],
+   "source": "Models/Props/Vase.glb"
+  },
+  "name": "Vase",
+  "uses": [],
+  "vendor": null
+ }
+]

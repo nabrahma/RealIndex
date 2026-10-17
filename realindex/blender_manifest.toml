@@ -1,0 +1,25 @@
+schema_version = "1.0.0"
+
+id = "realindex"
+version = "1.0.0"
+name = "RealIndex"
+tagline = "Drop downloads into one folder, use them from the Asset Browser"
+maintainer = "Nabaskar"
+website = "https://github.com/nabrahma/RealIndex"
+type = "add-on"
+blender_version_min = "5.2.0"
+
+license = [
+  "SPDX:GPL-3.0-or-later",
+]
+
+tags = ["Import-Export", "Material", "Object"]
+
+[permissions]
+files = "Read your drop folders and write the managed asset library"
+
+[build]
+paths_exclude_pattern = [
+  "__pycache__/",
+  "*.blend1",
+]

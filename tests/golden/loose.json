@@ -1,0 +1,17 @@
+[
+ {
+  "catalog": "",
+  "files": [
+   "Inbox/decal_grunge.png"
+  ],
+  "key": "Inbox/decal_grunge.png",
+  "kind": "problem",
+  "lods": [],
+  "maps": {},
+  "meta": {},
+  "name": "decal_grunge",
+  "problem": "Image is not part of a texture set (no map name such as _Color or _Normal)",
+  "uses": [],
+  "vendor": null
+ }
+]

@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+tests/_vendor/
+tests/_out/
+dist/
+scratch/
+*.blend1
+.pytest_cache/
+.hypothesis/
+

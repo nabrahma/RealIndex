@@ -1,0 +1,20 @@
+[
+ {
+  "catalog": "Blends",
+  "files": [
+   "Blends/Props.blend"
+  ],
+  "key": "Blends/Props.blend",
+  "kind": "blend",
+  "lods": [],
+  "maps": {},
+  "meta": {
+   "format": "blend",
+   "materials": [],
+   "source": "Blends/Props.blend"
+  },
+  "name": "Props",
+  "uses": [],
+  "vendor": null
+ }
+]

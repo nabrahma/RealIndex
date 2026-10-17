@@ -1,0 +1,41 @@
+[
+ {
+  "catalog": "Materials/ambientCG",
+  "files": [
+   "Inbox/tiles_bundle.zip/Tiles012_1K-JPG.zip/Tiles012_1K-JPG_Color.jpg",
+   "Inbox/tiles_bundle.zip/Tiles012_1K-JPG.zip/Tiles012_1K-JPG_NormalGL.jpg",
+   "Inbox/tiles_bundle.zip/Tiles012_1K-JPG.zip/Tiles012_1K-JPG_Roughness.jpg"
+  ],
+  "key": "Inbox/tiles_bundle.zip/Tiles012_1K-JPG.zip/Tiles012_1K-JPG_Color.jpg",
+  "kind": "material",
+  "lods": [],
+  "maps": {
+   "color": {
+    "dx": false,
+    "path": "Inbox/tiles_bundle.zip/Tiles012_1K-JPG.zip/Tiles012_1K-JPG_Color.jpg"
+   },
+   "normal": {
+    "dx": false,
+    "path": "Inbox/tiles_bundle.zip/Tiles012_1K-JPG.zip/Tiles012_1K-JPG_NormalGL.jpg"
+   },
+   "rough": {
+    "dx": false,
+    "path": "Inbox/tiles_bundle.zip/Tiles012_1K-JPG.zip/Tiles012_1K-JPG_Roughness.jpg"
+   }
+  },
+  "meta": {
+   "author": "ambientCG",
+   "license": "CC0",
+   "maps": [
+    "color",
+    "normal",
+    "rough"
+   ],
+   "res": "1K",
+   "source": "Inbox/tiles_bundle.zip"
+  },
+  "name": "Tiles012",
+  "uses": [],
+  "vendor": "ambientCG"
+ }
+]

@@ -1,0 +1,39 @@
+[
+ {
+  "catalog": "Materials/Ünïcode Földer",
+  "files": [
+   "Materials/Ünïcode Földer/Grès Tiles 2m/grès_tiles_Color.png",
+   "Materials/Ünïcode Földer/Grès Tiles 2m/grès_tiles_Normal.png",
+   "Materials/Ünïcode Földer/Grès Tiles 2m/grès_tiles_Roughness.png"
+  ],
+  "key": "Materials/Ünïcode Földer/Grès Tiles 2m/grès_tiles_Color.png",
+  "kind": "material",
+  "lods": [],
+  "maps": {
+   "color": {
+    "dx": false,
+    "path": "Materials/Ünïcode Földer/Grès Tiles 2m/grès_tiles_Color.png"
+   },
+   "normal": {
+    "dx": false,
+    "path": "Materials/Ünïcode Földer/Grès Tiles 2m/grès_tiles_Normal.png"
+   },
+   "rough": {
+    "dx": false,
+    "path": "Materials/Ünïcode Földer/Grès Tiles 2m/grès_tiles_Roughness.png"
+   }
+  },
+  "meta": {
+   "maps": [
+    "color",
+    "normal",
+    "rough"
+   ],
+   "size_m": 2.0,
+   "source": "Materials/Ünïcode Földer/Grès Tiles 2m/grès_tiles_Color.png"
+  },
+  "name": "grès_tiles",
+  "uses": [],
+  "vendor": null
+ }
+]

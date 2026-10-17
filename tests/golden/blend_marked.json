@@ -1,0 +1,20 @@
+[
+ {
+  "catalog": "Blends",
+  "files": [
+   "Blends/AssetPack.blend"
+  ],
+  "key": "Blends/AssetPack.blend",
+  "kind": "blend",
+  "lods": [],
+  "maps": {},
+  "meta": {
+   "format": "blend",
+   "materials": [],
+   "source": "Blends/AssetPack.blend"
+  },
+  "name": "AssetPack",
+  "uses": [],
+  "vendor": null
+ }
+]

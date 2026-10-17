@@ -1,0 +1,19 @@
+[
+ {
+  "catalog": "",
+  "files": [
+   "Inbox/rocks_pack.zip"
+  ],
+  "key": "Inbox/rocks_pack.zip",
+  "kind": "problem",
+  "lods": [],
+  "maps": {},
+  "meta": {
+   "source": "Inbox/rocks_pack.zip"
+  },
+  "name": "rocks_pack",
+  "problem": "Corrupted archive (File is not a zip file)",
+  "uses": [],
+  "vendor": null
+ }
+]

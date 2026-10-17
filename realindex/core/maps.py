@@ -9,7 +9,11 @@ IMAGE_EXTS = {".png", ".jpg", ".jpeg", ".tif", ".tiff", ".exr", ".hdr", ".tga", 
 # Map kinds. 'arm' and 'orm' are packed AO (R), Roughness (G), Metallic (B).
 COLOR, AO, ROUGH, GLOSS, METAL, NORMAL, HEIGHT, OPACITY, EMISSION, ARM, SPECULAR = (
     "color", "ao", "rough", "gloss", "metal", "normal", "height", "opacity", "emission", "arm", "specular")
-KINDS = (COLOR, AO, ROUGH, GLOSS, METAL, NORMAL, HEIGHT, OPACITY, EMISSION, ARM, SPECULAR)
+# Less common maps (Megascans, Poliigon, Poly Haven plants). Cavity is recognised so it joins its set, but
+# like AO it is not wired: Cycles computes occlusion itself.
+TRANSMISSION, SSS, TRANSLUCENCY, SHEEN, CAVITY = "transmission", "sss", "translucency", "sheen", "cavity"
+KINDS = (COLOR, AO, ROUGH, GLOSS, METAL, NORMAL, HEIGHT, OPACITY, EMISSION, ARM, SPECULAR,
+         TRANSMISSION, SSS, TRANSLUCENCY, SHEEN, CAVITY)
 
 # Single words (lower case) that name a map. Abbreviations only count as the last word of a name.
 WORDS = {
@@ -26,6 +30,11 @@ WORDS = {
     "emission": EMISSION, "emissive": EMISSION, "emit": EMISSION, "glow": EMISSION,
     "arm": ARM, "orm": ARM, "occlusionroughnessmetallic": ARM,
     "specular": SPECULAR, "spec": SPECULAR,
+    "transmission": TRANSMISSION, "transmissive": TRANSMISSION,
+    "sss": SSS, "subsurface": SSS,
+    "translucency": TRANSLUCENCY, "translucent": TRANSLUCENCY,
+    "sheen": SHEEN, "fuzz": SHEEN,
+    "cavity": CAVITY,
 }
 # Last-word-only abbreviations (marketplace habits: T_Chair_D.png, T_Chair_N.png, ...).
 SHORT = {"d": COLOR, "bc": COLOR, "n": NORMAL, "r": ROUGH, "m": METAL, "h": HEIGHT,

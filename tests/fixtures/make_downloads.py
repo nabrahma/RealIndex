@@ -196,6 +196,24 @@ def fx_gloss_set(out, tmp):
     save_image(os.path.join(d, "OldMetal_Metallic.png"), 64, 64, (1.0, 1.0, 1.0), "flat")
 
 
+def fx_megascans_set(out, tmp):
+    """Megascans-style surface: spec/gloss extras (Specular as sRGB F0, Cavity, Fuzz, Translucency) beside the
+    usual maps, non-square (1:2) like many foliage atlases."""
+    d = os.path.join(out, "Materials", "Plants", "Fern_vjkqfg")
+    p = "vjkqfg_2K_"
+    save_image(os.path.join(d, p + "Albedo.jpg"), 32, 64, (0.2, 0.45, 0.15), "noise")
+    save_image(os.path.join(d, p + "AO.jpg"), 32, 64, (0.9, 0.9, 0.9), "flat")
+    save_image(os.path.join(d, p + "Cavity.jpg"), 32, 64, (0.8, 0.8, 0.8), "flat")
+    save_image(os.path.join(d, p + "Displacement.jpg"), 32, 64, (0.5, 0.5, 0.5), "noise")
+    save_image(os.path.join(d, p + "Gloss.jpg"), 32, 64, (0.4, 0.4, 0.4), "flat")
+    save_image(os.path.join(d, p + "Roughness.jpg"), 32, 64, (0.6, 0.6, 0.6), "flat")
+    save_image(os.path.join(d, p + "Normal.jpg"), 32, 64, (0.5, 0.5, 1.0), "flat")
+    save_image(os.path.join(d, p + "Specular.jpg"), 32, 64, (0.22, 0.22, 0.22), "flat")  # F0 4% as sRGB
+    save_image(os.path.join(d, p + "Translucency.jpg"), 32, 64, (0.5, 0.6, 0.2), "flat")
+    save_image(os.path.join(d, p + "Fuzz.jpg"), 32, 64, (0.3, 0.3, 0.3), "flat")
+    save_image(os.path.join(d, p + "Opacity.jpg"), 32, 64, (1.0, 1.0, 1.0), "flat")
+
+
 def fx_unicode(out, tmp):
     d = os.path.join(out, "Materials", "Ünïcode Földer", "Grès Tiles 2m")
     save_image(os.path.join(d, "grès_tiles_Color.png"), 64, 64, (0.85, 0.82, 0.75), "bricks")
@@ -446,7 +464,7 @@ PERF_ONLY = {"big_gltf": fx_big_gltf}
 
 FIXTURES = {
     "acg_zip": fx_acg_zip, "ph_folder": fx_ph_folder, "ph_hdri": fx_ph_hdri, "multi_res": fx_multi_res,
-    "gloss_set": fx_gloss_set, "unicode": fx_unicode, "long_path": fx_long_path,
+    "gloss_set": fx_gloss_set, "megascans_set": fx_megascans_set, "unicode": fx_unicode, "long_path": fx_long_path,
     "sketchfab_zip": fx_sketchfab_zip, "market_fbx": fx_market_fbx, "obj_mtl": fx_obj_mtl, "usdz": fx_usdz,
     "stl_ply": fx_stl_ply, "abc": fx_abc, "glb": fx_glb, "blend_marked": fx_blend_marked,
     "blend_unmarked": fx_blend_unmarked, "corrupt_zip": fx_corrupt_zip, "max_file": fx_max_file,

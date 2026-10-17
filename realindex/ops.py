@@ -356,6 +356,28 @@ class RI_OT_material_mapping(bpy.types.Operator):
         return {"FINISHED"}
 
 
+class RI_OT_setup_displacement(bpy.types.Operator):
+    """Add an adaptive Subdivision modifier to the selected objects so Cycles renders the material's true
+    displacement"""
+    bl_idname = "realindex.setup_displacement"
+    bl_label = "Set Up Displacement"
+    bl_options = {"REGISTER", "UNDO"}
+
+    @classmethod
+    def poll(cls, context):
+        from .worker import build_material
+        ob = context.object
+        return ob is not None and build_material.has_displacement(ob.active_material)
+
+    def execute(self, context):
+        from .worker import build_material
+        objs = context.selected_objects or [context.object]
+        n = build_material.setup_displacement(objs)
+        note = "" if context.scene.render.engine == "CYCLES" else " (displacement renders in Cycles)"
+        self.report({"INFO"}, "Adaptive subdivision on %d object%s%s" % (n, "" if n == 1 else "s", note))
+        return {"FINISHED"}
+
+
 # ------------------------------------------------------------------------------------------- placing
 
 class RI_OT_place(_RootAsset, bpy.types.Operator):
@@ -381,11 +403,14 @@ class RI_OT_place(_RootAsset, bpy.types.Operator):
         mode = p.place_mode if p else "INSTANCE"
         try:
             if rec["type"] == "material":
-                _m, n = place.apply_material(context, rec, context.selected_objects or
-                                             ([context.object] if context.object else []),
-                                             p.material_slots if p else "ALL")
+                targets = context.selected_objects or ([context.object] if context.object else [])
+                m, n = place.apply_material(context, rec, targets, p.material_slots if p else "ALL")
                 if not n:
                     self.report({"WARNING"}, "Select objects to apply %s to" % rec["name"])
+                elif p is None or p.auto_subdivision:
+                    from .worker import build_material
+                    if build_material.has_displacement(m):
+                        build_material.setup_displacement(targets)
             elif rec["type"] == "hdri":
                 place.set_world(context, rec)
             elif self.replace and context.selected_objects:
@@ -439,7 +464,7 @@ class RI_OT_restore_world(bpy.types.Operator):
 _classes = (RI_OT_setup, RI_OT_add_root, RI_OT_remove_root, RI_OT_pause, RI_OT_sync_now, RI_OT_retry,
             RI_OT_reconvert, RI_OT_override, RI_OT_show_source, RI_OT_removals, RI_OT_undo_inbox, RI_OT_tag,
             RI_OT_favourite, RI_OT_rebuild, RI_OT_clear_cache, RI_OT_disk_usage, RI_OT_publish,
-            RI_OT_material_mapping, RI_OT_place, RI_OT_restore_world)
+            RI_OT_material_mapping, RI_OT_setup_displacement, RI_OT_place, RI_OT_restore_world)
 
 
 def register():

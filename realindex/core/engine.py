@@ -26,7 +26,7 @@ WEEK = 7 * 24 * 3600.0
 class Settings:
     """Preferences the engine and workers use (a plain copy, so the service thread never reads bpy)."""
     DEFAULTS = dict(poll_interval=2.0, workers=2, origin_bottom=True, remove_lights=True, mapping="UV",
-                    keep_lods=False, preview_size=256, preview_engine="AUTO", inbox_autofile=True,
+                    displacement="TRUE", keep_lods=False, preview_size=256, preview_engine="AUTO", inbox_autofile=True,
                     delete_mode="ASK", ao_multiply=False, blend_mode="COLLECTIONS", timeout=120.0)
 
     def __init__(self, **kw):
@@ -34,7 +34,7 @@ class Settings:
             setattr(self, k, kw.get(k, v))
 
     def worker_prefs(self):
-        return {k: getattr(self, k) for k in ("origin_bottom", "remove_lights", "mapping", "keep_lods",
+        return {k: getattr(self, k) for k in ("origin_bottom", "remove_lights", "mapping", "displacement", "keep_lods",
                                               "preview_size", "preview_engine", "ao_multiply", "blend_mode")}
 
 

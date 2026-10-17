@@ -56,7 +56,15 @@ class RealIndexPreferences(AddonPreferences):
     mapping: EnumProperty(name="Texture-Set Mapping", update=_changed,
                           items=(("UV", "UV", "UV coordinates (Box toggle on the material)"),
                                  ("BOX", "Box", "Object coordinates with box projection")), default="UV")
+    displacement: EnumProperty(
+        name="Height Maps", update=_changed, default="TRUE",
+        items=(("TRUE", "True Displacement", "Height moves the surface (Cycles, with adaptive subdivision); the "
+                "vendor's displacement scale is used when its .blend is next to the maps"),
+               ("BUMP", "Bump Only", "Height only shades the surface; nothing is displaced")))
     ao_multiply: BoolProperty(name="Multiply AO into Color", default=False, update=_changed)
+    auto_subdivision: BoolProperty(
+        name="Subdivide for Displacement", default=True,
+        description="When Quick Place puts a displaced material on objects, add an adaptive Subdivision modifier")
     keep_lods: BoolProperty(name="Keep LODs", default=False, update=_changed,
                             description="Keep LOD1+ as hidden objects in the model's collection")
     preview_size: EnumProperty(name="Preview Size", update=_changed, default="256",
@@ -105,6 +113,7 @@ class RealIndexPreferences(AddonPreferences):
         col.prop(self, "origin_bottom")
         col.prop(self, "remove_lights")
         col.prop(self, "mapping")
+        col.prop(self, "displacement")
         col.prop(self, "keep_lods")
         col.prop(self, "preview_size")
         col.prop(self, "preview_engine")
@@ -114,6 +123,7 @@ class RealIndexPreferences(AddonPreferences):
         col.prop(self, "place_align")
         col.prop(self, "place_random")
         col.prop(self, "material_slots")
+        col.prop(self, "auto_subdivision")
         col.prop(self, "show_advanced")
         if self.show_advanced:
             col.prop(self, "ao_multiply")
@@ -148,7 +158,8 @@ def settings():
     if p is None:
         return Settings()
     return Settings(poll_interval=p.poll_interval, workers=p.workers, origin_bottom=p.origin_bottom,
-                    remove_lights=p.remove_lights, mapping=p.mapping, keep_lods=p.keep_lods,
+                    remove_lights=p.remove_lights, mapping=p.mapping, displacement=p.displacement,
+                    keep_lods=p.keep_lods,
                     preview_size=int(p.preview_size), preview_engine=p.preview_engine,
                     inbox_autofile=p.inbox_autofile, delete_mode=p.delete_mode, ao_multiply=p.ao_multiply,
                     blend_mode=p.blend_mode, timeout=p.timeout)

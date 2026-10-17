@@ -21,6 +21,12 @@ from realindex.core import library, maps, names, search
     ("T_ChairWoodBaseColor", "color", "T_ChairWood", None, False),
     ("OldMetal_Glossiness", "gloss", "OldMetal", None, False),
     ("planks_rough_1024", "rough", "planks", "1K", False),
+    ("vjkqfg_2K_Translucency", "translucency", "vjkqfg", "2K", False),
+    ("vjkqfg_2K_Fuzz", "sheen", "vjkqfg", "2K", False),
+    ("vjkqfg_2K_Cavity", "cavity", "vjkqfg", "2K", False),
+    ("WaxCandle_SSS", "sss", "WaxCandle", None, False),
+    ("Glass_Pattern_TRANSMISSION", "transmission", "Glass_Pattern", None, False),
+    ("fern_leaf_translucent_2k", "translucency", "fern_leaf", "2K", False),
     ("Bricks076C", None, "Bricks076C", None, False),
     ("meadow_2k", None, "meadow", "2K", False),
     ("Chair_A", None, "Chair_A", None, False),
@@ -32,7 +38,8 @@ def test_parse(stem, kind, prefix, res, dx):
 
 def test_colour_spaces():
     assert maps.colorspace("color") == "sRGB" and maps.colorspace("emission") == "sRGB"
-    for k in ("rough", "gloss", "metal", "normal", "height", "ao", "arm", "opacity"):
+    for k in ("rough", "gloss", "metal", "normal", "height", "ao", "arm", "opacity", "specular", "transmission",
+              "sss", "translucency", "sheen", "cavity"):
         assert maps.colorspace(k) == "Non-Color"
 
 

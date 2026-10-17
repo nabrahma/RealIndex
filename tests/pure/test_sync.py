@@ -289,7 +289,7 @@ def test_safety_drop_root_untouched(root_state, downloads):
     pool.run(eng)
     eng.clear_cache()
     assert _checksums(root) == before
-    assert len([a for a in eng.db.assets() if a["status"] == "ok"]) == 20
+    assert len([a for a in eng.db.assets() if a["status"] == "ok"]) == 21
 
 
 def test_safety_inbox_moves_only_with_preference(root_state, downloads):

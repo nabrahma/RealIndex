@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.1.0 (2026-10-18)
+
+- Height maps become true displacement for Cycles: a Displacement node into the material output, with the
+  vendor's own scale and midlevel when its .blend is beside the maps (Poly Haven), otherwise 3% of the texture's
+  real-world size. *Height Maps: Bump Only* in the preferences keeps the previous bump.
+- *Set Up Displacement* adds an adaptive Subdivision modifier; Quick Place does it automatically for displaced
+  materials. The sidebar shows the material's Displacement and Midlevel.
+- Specular maps are wired to Specular IOR Level, converting spec/gloss reflectance (F0) maps.
+- New maps: transmission, subsurface (SSS), translucency (thin wall), sheen/fuzz; cavity is recognised. Megascans
+  surfaces no longer leave their Cavity, Fuzz and Translucency maps under Problems.
+- Non-square texture sets keep square pixels.
+
 ## 1.0.0 (2026-10-17)
 
 First release, for Blender 5.2 LTS.

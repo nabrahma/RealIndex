@@ -65,7 +65,7 @@ def convert(job):
     info, extra = {}, []
     if t == "material":
         mat, wired = build_material.build(job["name"], job["maps"], job.get("size_m"), prefs.get("mapping", "UV"),
-                                          prefs.get("ao_multiply", False))
+                                          prefs.get("ao_multiply", False), prefs.get("displacement", "TRUE"))
         info["maps"] = wired
         vp = job.get("vendor_preview")
         if vp and os.path.exists(vp):

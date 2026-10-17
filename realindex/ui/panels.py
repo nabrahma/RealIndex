@@ -137,6 +137,14 @@ def draw_main(layout, context):
         cur = mat.get("ri_mapping", "UV")
         for mode, label in (("UV", "UV"), ("BOX", "Box")):
             row.operator("realindex.material_mapping", text=label, depress=(cur == mode)).mode = mode
+        disp = mat.node_tree.nodes.get("RI Displacement")
+        if disp is not None:
+            col = box.column(align=True)
+            col.prop(disp.inputs["Scale"], "default_value", text="Displacement")
+            col.prop(disp.inputs["Midlevel"], "default_value", text="Midlevel")
+            adaptive = any(m.type == "SUBSURF" and m.use_adaptive_subdivision for m in ob.modifiers)
+            if not adaptive:
+                box.operator("realindex.setup_displacement", icon="MOD_DISPLACE")
     if context.scene is not None and context.scene.get("ri_previous_world"):
         layout.operator("realindex.restore_world", icon="LOOP_BACK")
 

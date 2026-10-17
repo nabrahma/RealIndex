@@ -15,7 +15,7 @@ Your downloaded files are never modified.
 
 ## Five-minute walk-through
 
-1. **Install** `realindex-1.0.0.zip` from the [latest release](https://github.com/nabrahma/RealIndex/releases/latest)
+1. **Install** `realindex-1.1.0.zip` from the [latest release](https://github.com/nabrahma/RealIndex/releases/latest)
    (Edit > Preferences > Get Extensions > Install from Disk) and enable it.
 2. **Set up** in the 3D Viewport sidebar (N) > RealIndex > *Set Up RealIndex*. It creates
    `Documents/RealIndex` with `Models`, `Materials`, `HDRIs` and `Inbox`, and registers two asset libraries:
@@ -40,7 +40,7 @@ Delete a file and its asset is hidden, then removed once you confirm in the pane
 
 | Download | Becomes |
 | --- | --- |
-| Texture sets (a folder or zip of `_Color`, `_Roughness`, `_Normal`, `_arm_`, ... maps) | A material: Principled BSDF, correct colour spaces, gloss inverted, DirectX normals flipped, ARM/ORM split, height as bump, real-world scale from the name (`2m`, `150cm`) |
+| Texture sets (a folder or zip of `_Color`, `_Roughness`, `_Normal`, `_arm_`, ... maps) | A material: Principled BSDF, correct colour spaces, gloss inverted, DirectX normals flipped, ARM/ORM split, real-world scale from the name (`2m`, `150cm`), square pixels on non-square maps. Height becomes true displacement for Cycles (see below); specular, transmission, subsurface, translucency and sheen/fuzz maps feed their Principled inputs |
 | HDRIs (`.hdr`, `.exr`, about 2:1) | A world: Environment Texture with a rotation value and strength |
 | Models: `.fbx`, `.obj`+`.mtl`, `.gltf`, `.glb`, `.usd*`, `.abc`, `.stl`, `.ply` | A collection (or object) asset: unit mistakes fixed, origin at the bottom centre, textures relinked even when the names in the file do not match, LOD0 kept |
 | `.blend` files | Marked assets: shown as they are in RealIndex Files. Unmarked: their top-level collections become assets |
@@ -50,9 +50,38 @@ Anything RealIndex cannot use (an unsupported format, a corrupted zip, a texture
 is listed under **Problems** in the panel with the reason, *Retry* and *Ignore*. Per asset you can override
 detection (Texture Set, Model, HDRI, Ignore), reconvert, show the source file, star it and edit its tags.
 
+## How texture sets are wired
+
+RealIndex builds materials for Cycles the way the vendors' own Blender files do, and uses every map it finds:
+
+| Map | Goes to |
+| --- | --- |
+| Color / Albedo / Diffuse | Base Color (sRGB) |
+| Roughness, or Gloss inverted | Roughness |
+| Metallic, or the B channel of ARM/ORM | Metallic |
+| Normal (OpenGL; DirectX green flipped) | Normal Map node |
+| Height / Displacement | **True displacement**: Displacement node into the material output, object space, midlevel 0.5, smooth (cubic) sampling. The scale is the vendor's own value when its `.blend` sits beside the maps (Poly Haven tunes it per material), otherwise 3% of the texture's real-world size |
+| Specular | Specular IOR Level. Spec/gloss maps (reflectance stored as sRGB, about 0.22 for non-metals, as Megascans ships them) are converted (x 12.5); game-engine "specular level" maps (0.5 = default) go straight in. The map's own values tell the two apart |
+| Opacity / Alpha / Mask | Alpha |
+| Emission | Emission Color |
+| Transmission | Transmission Weight |
+| SSS / Subsurface | Subsurface Weight |
+| Translucency | Thin Wall on, Subsurface Weight (light through leaves and paper) |
+| Sheen / Fuzz | Sheen Weight |
+| AO, Cavity | Recognised, not wired: Cycles traces occlusion itself (*Multiply AO into Color* in the preferences if you want it) |
+
+**Displacement needs geometry to move.** Quick Place adds an adaptive Subdivision modifier when it puts a displaced
+material on objects; for materials dragged from the Asset Browser, click *Set Up Displacement* in the RealIndex
+sidebar tab. Cycles then dices the mesh to about one pixel at render time (Blender 5.0+, no experimental
+settings). The same tab has the material's Displacement and Midlevel values. With a normal map the material uses
+*Displacement Only* (the normal map carries the fine detail); without one it uses *Displacement and Bump*.
+Prefer bump only? Set *Height Maps* to *Bump Only* in the preferences and click *Rebuild Library*.
+
 ## Where things live
 
-- Your drop folders are only read (Inbox filing excepted).
+- Your drop folders are only read (Inbox filing excepted). One thing to know: Cycles' *Texture Cache* with *Auto
+  Generate* (Blender 5.2) writes `blender_tx/` folders next to every image it renders, which includes your drop
+  folders. To keep them out, point the texture cache location to an absolute folder in Blender's preferences.
 - Each drop folder has a **library folder** (default `%LOCALAPPDATA%\RealIndex\libraries\<folder>-<hash>`):
   the index, extracted zips, previews and one small .blend per asset referencing your textures. It is safe to
   delete: *Rebuild Library* recreates it with the same catalogs. Pick a local disk for it in Preferences to
@@ -97,7 +126,7 @@ python -m pytest tests/pure                                   # detection, sync,
 python tests/corpus/fetch.py                                  # optional: real CC0 downloads
 python scripts/perf.py                                        # performance on those downloads
 python scripts/dev_detect.py FOLDER                           # what detection makes of any folder
-python scripts/package.py                                     # dist/realindex-1.0.0.zip
+python scripts/package.py                                     # dist/realindex-1.1.0.zip
 ```
 
 Test fixtures are generated from code (`tests/fixtures/make_downloads.py`): every vendor quirk, model format

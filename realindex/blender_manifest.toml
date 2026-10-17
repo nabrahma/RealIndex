@@ -1,7 +1,7 @@
 schema_version = "1.0.0"
 
 id = "realindex"
-version = "1.0.0"
+version = "1.1.0"
 name = "RealIndex"
 tagline = "Drop downloads into one folder, use them from the Asset Browser"
 maintainer = "Nabaskar"

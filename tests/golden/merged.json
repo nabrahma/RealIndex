@@ -349,6 +349,87 @@
   "vendor": "Poly Haven"
  },
  {
+  "catalog": "Materials/Plants",
+  "files": [
+   "Materials/Plants/Fern_vjkqfg/vjkqfg_2K_AO.jpg",
+   "Materials/Plants/Fern_vjkqfg/vjkqfg_2K_Albedo.jpg",
+   "Materials/Plants/Fern_vjkqfg/vjkqfg_2K_Cavity.jpg",
+   "Materials/Plants/Fern_vjkqfg/vjkqfg_2K_Displacement.jpg",
+   "Materials/Plants/Fern_vjkqfg/vjkqfg_2K_Fuzz.jpg",
+   "Materials/Plants/Fern_vjkqfg/vjkqfg_2K_Gloss.jpg",
+   "Materials/Plants/Fern_vjkqfg/vjkqfg_2K_Normal.jpg",
+   "Materials/Plants/Fern_vjkqfg/vjkqfg_2K_Opacity.jpg",
+   "Materials/Plants/Fern_vjkqfg/vjkqfg_2K_Roughness.jpg",
+   "Materials/Plants/Fern_vjkqfg/vjkqfg_2K_Specular.jpg",
+   "Materials/Plants/Fern_vjkqfg/vjkqfg_2K_Translucency.jpg"
+  ],
+  "key": "Materials/Plants/Fern_vjkqfg/vjkqfg_2K_Albedo.jpg",
+  "kind": "material",
+  "lods": [],
+  "maps": {
+   "ao": {
+    "dx": false,
+    "path": "Materials/Plants/Fern_vjkqfg/vjkqfg_2K_AO.jpg"
+   },
+   "cavity": {
+    "dx": false,
+    "path": "Materials/Plants/Fern_vjkqfg/vjkqfg_2K_Cavity.jpg"
+   },
+   "color": {
+    "dx": false,
+    "path": "Materials/Plants/Fern_vjkqfg/vjkqfg_2K_Albedo.jpg"
+   },
+   "height": {
+    "dx": false,
+    "path": "Materials/Plants/Fern_vjkqfg/vjkqfg_2K_Displacement.jpg"
+   },
+   "normal": {
+    "dx": false,
+    "path": "Materials/Plants/Fern_vjkqfg/vjkqfg_2K_Normal.jpg"
+   },
+   "opacity": {
+    "dx": false,
+    "path": "Materials/Plants/Fern_vjkqfg/vjkqfg_2K_Opacity.jpg"
+   },
+   "rough": {
+    "dx": false,
+    "path": "Materials/Plants/Fern_vjkqfg/vjkqfg_2K_Roughness.jpg"
+   },
+   "sheen": {
+    "dx": false,
+    "path": "Materials/Plants/Fern_vjkqfg/vjkqfg_2K_Fuzz.jpg"
+   },
+   "specular": {
+    "dx": false,
+    "path": "Materials/Plants/Fern_vjkqfg/vjkqfg_2K_Specular.jpg"
+   },
+   "translucency": {
+    "dx": false,
+    "path": "Materials/Plants/Fern_vjkqfg/vjkqfg_2K_Translucency.jpg"
+   }
+  },
+  "meta": {
+   "maps": [
+    "ao",
+    "cavity",
+    "color",
+    "gloss",
+    "height",
+    "normal",
+    "opacity",
+    "rough",
+    "sheen",
+    "specular",
+    "translucency"
+   ],
+   "res": "2K",
+   "source": "Materials/Plants/Fern_vjkqfg/vjkqfg_2K_Albedo.jpg"
+  },
+  "name": "vjkqfg",
+  "uses": [],
+  "vendor": null
+ },
+ {
   "catalog": "Materials/Rock",
   "files": [
    "Materials/Rock/rock_wall_08_2k/textures/rock_wall_08_arm_2k.jpg",

@@ -1,5 +1,5 @@
 """Smoke test of the packaged extension (run inside a Blender whose BLENDER_USER_RESOURCES is a throwaway
-folder where dist/realindex-1.0.0.zip was installed): enable it, convert one fixture with the installed
+folder where dist/realindex-1.1.0.zip was installed): enable it, convert one fixture with the installed
 worker, check the asset file.
 
     python scripts/smoke_installed.py        (does the install and the run)
@@ -16,7 +16,7 @@ if "bpy" not in sys.modules:  # outer process
     cfg = os.path.join(ROOT, "tests", "_out", "smoke_config")
     env = dict(os.environ, BLENDER_USER_RESOURCES=cfg)
     subprocess.run([blender_bin(), "--factory-startup", "--command", "extension", "install-file", "-r", "user_default",
-                    "--enable", os.path.join(ROOT, "dist", "realindex-1.0.0.zip")], env=env, check=True)
+                    "--enable", os.path.join(ROOT, "dist", "realindex-1.1.0.zip")], env=env, check=True)
     r = subprocess.run([blender_bin(), "--background", "--python", os.path.abspath(__file__)], env=env,
                        capture_output=True, text=True)
     print("\n".join(l for l in r.stdout.splitlines() if l.startswith("SMOKE")))

@@ -42,7 +42,7 @@ jobs:
       - name: Locate Blender
         shell: bash
         run: |
-          bin=$(ls -d "$PWD"/blender/*/blender.exe | head -1)
+          bin=$(cygpath -w "$(ls -d "$PWD"/blender/*/blender.exe | head -1)")
           echo "BLENDER_BIN=$bin" >> "$GITHUB_ENV"
           "$bin" --version | head -1
 

@@ -46,6 +46,20 @@ jobs:
           echo "BLENDER_BIN=$bin" >> "$GITHUB_ENV"
           "$bin" --version | head -1
 
+      # Hosted runners have no GPU; previews (EEVEE, Workbench) need OpenGL, so use Mesa's software renderer.
+      - name: Software OpenGL
+        shell: bash
+        run: |
+          curl -sSfL -o mesa.7z "https://github.com/pal1000/mesa-dist-win/releases/download/${MESA_VERSION}/mesa3d-${MESA_VERSION}-release-msvc.7z"
+          7z x -y -omesa mesa.7z > /dev/null
+          dir=$(dirname "$(cygpath -u "$BLENDER_BIN")")
+          for f in opengl32.dll libgallium_wgl.dll libglapi.dll dxil.dll; do
+            [ -f "mesa/x64/$f" ] && cp "mesa/x64/$f" "$dir/" && echo "copied $f"
+          done
+          echo "GALLIUM_DRIVER=llvmpipe" >> "$GITHUB_ENV"
+        env:
+          MESA_VERSION: "26.2.3"
+
       - name: Pure suite
         run: python -m pytest tests/pure -q -p no:cacheprovider
 
